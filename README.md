@@ -56,5 +56,3 @@ dysel({
 
 ### License
 MIT license. See LICENSE.txt  
-
-*Any feedback is appreciated.*
