@@ -1,5 +1,6 @@
 ## DySEL - DYnamic Sequential Ext_res Loader
 
+http://sun2rise.github.io/dysel/  
 ` DySEL` is an asynchronous sequential resources (JavaScript and CSS) loader.  
 It stacks resources and loads them so that the next resource is loaded only when the previous one is ok.
 
