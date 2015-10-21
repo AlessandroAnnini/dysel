@@ -1,3 +1,7 @@
+/*! dysel.js
+* https://github.com/sun2rise/dysel
+* The MIT License (MIT)
+* Copyright (c) 2015 Alessandro Filippo Annini */
 var dysel = function(options) {
   // get options
   var links = options.links;
