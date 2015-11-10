@@ -20,7 +20,7 @@ It is super small: 2.2Kb in plain text, **0.8Kb** minified.
 ### Usage
 
 We want to load Lobster Font and we want to use [Smoke](http://alfredobarron.github.io/smoke/#/) plugin for jQuery.  
-Smoke require [jQuery](http://jquery.com/) and [Bootstrap](http://getbootstrap.com/) to work, so we need to load everything properly.  
+Smoke requires [jQuery](http://jquery.com/) and [Bootstrap](http://getbootstrap.com/) to work, so we need to load everything properly.  
 That's how you can use DySEL for this: 
 
 Embed DySEL just like always
