@@ -23,6 +23,8 @@ We want to load Lobster Font and we want to use [Smoke](http://alfredobarron.git
 Smoke requires [jQuery](http://jquery.com/) and [Bootstrap](http://getbootstrap.com/) to work, so we need to load everything properly.  
 That's how you can use DySEL for this: 
 
+[jsFiddle example](https://jsfiddle.net/sunrising/qk0ybtnb/)
+
 Embed DySEL just like always
 ``` html
 <script type="text/javascript" src="dysel.js"></script>
@@ -30,12 +32,12 @@ Embed DySEL just like always
 
 Use it
 ``` js
-var googleFont = 'http://fonts.googleapis.com/css?family=Lobster';
+var googleFont = 'https://fonts.googleapis.com/css?family=Lobster';
 var jquery = 'https://code.jquery.com/jquery.js';
 var bootstrapCss = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css';
 var bootstrapJs = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js';
-var smokeCss = 'css/smoke.min.css';
-var smokeJs = 'js/smoke.min.js';
+var smokeCss = 'https://rawgit.com/alfredobarron/smoke/master/dist/css/smoke.min.css';
+var smokeJs = 'https://rawgit.com/alfredobarron/smoke/master/dist/js/smoke.min.js';
 
 // push links into an array in the correct order
 var extRes = [];
@@ -49,7 +51,9 @@ extRes.push(smokeJs);
 // let this happen
 dysel({
   links: extRes,
-  callback: function() {console.log('now i can use smoke, this is awesome!');}, // optional
+  callback: function() {
+    alert('everything is now loaded, this is awesome!');
+  }, // optional
   nocache: false, // optional
   debug: false // optional
 });
