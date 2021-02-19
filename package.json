@@ -1,0 +1,49 @@
+{
+  "name": "dysel",
+  "version": "0.0.0-development",
+  "description": "React hooks for AWS Amplify",
+  "keywords": [
+    "external",
+    "ext_libs",
+    "sequential",
+    "loading"
+  ],
+  "bugs": "https://github.com/AlessandroAnnini/dysel/issues",
+  "license": "MIT License",
+  "author": "Alessandro Annini",
+  "main": "dist/dysel.cjs.js",
+  "module": "dist/dysel.esm.js",
+  "browser": "dist/dysel.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlessandroAnnini/dysel"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "semantic-release": "semantic-release"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "endOfLine": "lf",
+    "printWidth": 80
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.10",
+    "rollup": "^2.39.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "semantic-release": "^17.3.9"
+  }
+}

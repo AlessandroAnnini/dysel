@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script type="text/javascript" src="./../src/index.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      <!-- what we need -->
+      const googleFont = 'http://fonts.googleapis.com/css?family=Lobster';
+      const jquery = 'https://code.jquery.com/jquery.js';
+      const bootstrapCss =
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css';
+      const bootstrapJs =
+        'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js';
+
+      <!-- push links into an array in the correct order -->
+      const extRes = [googleFont, bootstrapCss, jquery, bootstrapJs];
+
+      <!-- let this happen -->
+      dysel({
+        links: extRes,
+        callback: function () {
+          console.log('now i can use smoke, this is awesome!');
+        }, // optional
+        nocache: false, // optional
+        debug: false, // optional
+      });
+    </script>
+  </body>
+</html>
